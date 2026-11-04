@@ -158,7 +158,7 @@ print(df["trip_duration_minutes"].describe())
 print("Sampling Data...")
 
 df = df.sample(
-    n=300000,
+    n=50000,
     random_state=42
 )
 
@@ -216,8 +216,8 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.ensemble import RandomForestRegressor
 
 model = RandomForestRegressor(
-    n_estimators=200,
-    max_depth=20,
+    n_estimators=50,
+    max_depth=10,
     random_state=42,
     n_jobs=-1
 )
